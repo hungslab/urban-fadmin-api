@@ -5,8 +5,10 @@ import lombok.Data;
 import lombok.EqualsAndHashCode;
 
 /**
+ *
  * 自定义业务异常，用于处理用户请求时，业务错误时抛出
- * @author hungs
+ *
+ * @author Hungs
  * @version 1.00
  * @date 2023/7/20
  */

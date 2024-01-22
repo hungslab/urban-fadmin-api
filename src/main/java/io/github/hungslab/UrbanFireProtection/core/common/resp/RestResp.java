@@ -6,8 +6,10 @@ import lombok.Getter;
 import java.util.Objects;
 
 /**
+ *
  * Http Rest 响应工具及数据格式封装
- * @author hungs
+ *
+ * @author Hungs
  * @version 1.00
  * @date 2023/7/20
  */

@@ -15,7 +15,7 @@ import lombok.Getter;
  * 错误码分为一级宏观错误码、二级宏观错误码、三级宏观错误码。
  * 在无法更加具体确定的错误场景中，可以直接使用一级宏观错误码。
  *
- * @author hungs
+ * @author Hungs
  * @version 1.00
  * @date 2023/7/20
  */

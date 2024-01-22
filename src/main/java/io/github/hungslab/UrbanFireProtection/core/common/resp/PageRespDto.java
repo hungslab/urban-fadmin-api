@@ -4,7 +4,7 @@ package io.github.hungslab.UrbanFireProtection.core.common.resp;
  *
  * 分页响应数据格式封装
  *
- * @author hungs
+ * @author Hungs
  * @version 1.00
  * @date 2023/7/20
  */

@@ -9,6 +9,9 @@ import org.springframework.web.bind.annotation.RestControllerAdvice;
 
 
 /**
+ *
+ * 通用的异常处理器
+ *
  * @author hungs
  * @version 1.00
  * @date 2023/7/20

@@ -7,7 +7,7 @@ import lombok.Data;
  *
  * 分页请求数据格式封装，所有分页请求的 Dto 类都应继承该类
  *
- * @author hungs
+ * @author Hungs
  * @version 1.00
  * @date 2023/7/20
  */
@@ -29,5 +29,4 @@ public class PageReqDto {
      * 为 true 时，pageNum 和 pageSize 无效
      * */
     private boolean fetchAll = false;
-
 }
