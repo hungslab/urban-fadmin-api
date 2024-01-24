@@ -1,6 +1,6 @@
 package io.github.hungslab.UrbanFireProtection.service.impl;
 
-import io.github.hungslab.UrbanFireProtection.core.common.utils.EmailVerCodeGenerateUtil;
+import io.github.hungslab.UrbanFireProtection.core.common.utils.VerCodeGenerateUtil;
 import io.github.hungslab.UrbanFireProtection.pojo.EmailDetails;
 import io.github.hungslab.UrbanFireProtection.service.EmailService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -32,7 +32,7 @@ public class EmailServiceImpl implements EmailService {
             mailMessage.setFrom(sender);
             mailMessage.setTo(details.getRecipient());
             mailMessage.setSubject("您本次的验证码是");
-            String verCode = EmailVerCodeGenerateUtil.generateVerCode();
+            String verCode = VerCodeGenerateUtil.generateEmailConfirmCode();
             mailMessage.setText("尊敬的xxx,您好:\n"
                     + "\n本次请求的邮件验证码为:" + verCode + ",本验证码 5 分钟内效，请及时输入。（请勿泄露此验证码）\n"
                     + "\n如非本人操作，请忽略该邮件。\n(这是一封通过自动发送的邮件，请不要直接回复）");

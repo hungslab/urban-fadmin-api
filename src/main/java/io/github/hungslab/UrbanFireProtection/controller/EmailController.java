@@ -4,9 +4,8 @@ import io.github.hungslab.UrbanFireProtection.pojo.EmailDetails;
 import io.github.hungslab.UrbanFireProtection.service.EmailService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
@@ -17,7 +16,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @Slf4j
-@CrossOrigin(origins = "*",maxAge = 3600)
 public class EmailController {
 
     @Autowired
@@ -25,9 +23,10 @@ public class EmailController {
 
     // 发送邮件
     @PostMapping("/api/sendMail")
-    public String sendMail(@RequestBody EmailDetails details)
+    public String sendMail(@RequestParam("details") EmailDetails details)
     {
         String status = emailService.sendSimpleMail(details);
         return status;
     }
+
 }
